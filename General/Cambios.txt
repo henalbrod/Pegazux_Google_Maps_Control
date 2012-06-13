@@ -1,0 +1,48 @@
+﻿1) Nueva API V 3.2
+
+2) Impresión Directa [GoogleMap.Print]
+	- Escala: Permite seleccionar la escala a la cual se imprimirá el documento.
+
+3) Vista Previa de impresión [GoogleMap.ShowPrintPreview]
+	- Escala: Permite seleccionar la escala a la cual se imprimirá el documento.
+	- Zoom
+	- Exportar: Permite seleccionar si se desea exportar con la escala seleccionada o en tamaño original.
+	- Configuración de página: Agregada la opción de configuración de página a la vista previa, también guarda la última configuración de página.
+	- Dialogo de impresión
+
+4) Obtener imágen [GoogleMap.GetBitMap]
+	- Escala: Permite seleccionar la escala a la cual se genererá la imágen del mapa.
+
+5) Obtener documento de impresión [GoogleMap.GetPrintDocument]
+	- Escala: Permite seleccionar la escala a la cual se genererá la imágen en el documento de impresión.
+
+6) Desaparece el tipo "Options" de los diferentes objetos, ahora la asignación de las propiedades es directa
+
+7) Corregido el método de carga del control, ahora se pueden asignar valores en el método MapLoaded o directamnte en el load del formulario.
+   siendo estos reflejados correctamente y no como anteriormente que se debía esperar la carga del mapa y no se podía asignar estas propiedades
+   en el load del formulario.
+
+8) Desaparecen los métodos de asignación de propiedades como "SetZoom()" estos son reemplazados por la asignación directa de propiedades. 
+
+9) Desaparece la propiedad AddMarkerOnClick.
+
+10) Actualizado El Script de MarkerClusterer al MarkerClusterer Plus.
+
+11) Corregido el problema al limpiar los markers del mapa.
+
+12) Se puede activar y desactivar el uso del cluster dinámicamente sin problemas.
+
+13) Añadida la función DeleteMarkers.
+
+14) Añadida la función RefreshMarkers.
+
+15) Cambia el modo de agregar marcadores, ahora luego de agregarlo al mapa se debe 
+    llamar a la función RefreshMarkers para que se reflejen los cambios, esto va en pro
+	del rendimiento al mostrar grandes cantidades de marcadores
+
+16) Actualizada la propiedad ControlPosition, se agregaron 4 nuevas posiciones para un total
+    de 12 y se puede asignar desde la vista de diseño
+
+17) Agregada la propiedad navigationControlOptions a la vista de diseño
+
+18) Agregada la propiedad ScaleControl a la vista de diseño
